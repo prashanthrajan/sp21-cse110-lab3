@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Prashanth's Journal</title>
+        <meta name="author" content="John Doe">
+        <link rel="shortcut icon" type="image/jpg" href="/media/pikachu.jpg"/>
+    </head>
+    <body>
+        <header>
+            <h1>Prashanth's Journal</h1>
+            <p>By Prashanth Rajan</p>
+            <p>Published April 10th, 2021</p>
+        </header>
+        <main>
+            <section>
+                <p>Here is a little bit about what I did these past few days.</p>
+                <strong>Note: These are not the only things I did</strong>
+            </section>
+            <hr>
+            <section>
+                <h1>April 8th, 2021</h1>
+                <h2>Thursday</h2>
+                <p>I learned how to use the br tag<br>to create line breaks</p>
+                <h3>Highlights</h3>
+                <div>
+                    <ul>
+                        <li>Had three 120 min classes</li>
+                        <li>ate a lot of food</li>
+                    </ul>
+                </div>
+                <h3>Things to do</h3>
+                <span>
+                    <ol>
+                        <li>Review quiz</li>
+                        <li>Finish <b>Lab2</b></li>
+                    </ol>
+                </span>
+            </section>
+            <hr>
+            <section>
+                <h1>April 9th, 2021</h1>
+                <h2>Friday</h2>
+                <p>I didn't have a lot of classes so I was able to get a <em>so much</em> work done</p>
+                <h3>Highlights</h3>
+                <ul>
+                    <li>caught up on <i>econ lectures</i></li>
+                    <li>did a lot of <a href="https://www.homedepot.com/b/Outdoors-Garden-Center/N-5yc1vZbx6k">gardening work</a></li>
+                </ul>
+                <h3>Things to do</h3>
+                <ol>
+                    <li>Finish <b>Lab2</b></li>
+                    <li>econ homework</li>
+                    <li>algos homework</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h1>April 10th, 2021</h1>
+                <h2>Saturday</h2>
+                <h3>Highlights</h3>
+                <ul>
+                    <li>Finished Lab2 part 1</li>
+                    <li>Met with 110 group</li>
+                    <li>Played some Pokemon Go</li>
+                    <div>
+                        <img src="/media/pikachu.jpg" height="500" width="500" alt="Pikachu">
+                    </div>
+                    <br>
+                    <details>
+                        <summary><b>Pokemon Go</b></summary>
+                        <p>Pokemon Go is a mobile game developed by <b>Niantic</b> that let's players catch Pokemon in the <i>real world</i>.<br>It's pretty awesome!</p>
+                    </details>
+                </ul>
+                <h3>Things to do</h3>
+                <ol>
+                    <li>Lab2 part2</li>
+                    <li>Meet with group again</li>
+                    <li>Get a dog</li>
+                    <div>
+                        <video height="320" width="180" controls>
+                            <source src="/media/dogvid.MOV" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="/media/dogsound.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </ol>
+            </section>
+            <hr>
+            <h2>Add Entry</h2>
+            <form>
+                <div>
+                    <fieldset>
+                        <label for="date">What date is the entry for?</label>
+                        <input type="date" id="date" name="entrydate" value="2021-04-10" min="2020-04-10" max="2022-04-10">
+                        <br>
+                        <label for="day">Good day or bad day?</label><br>
+                        <input type="radio" id="good" name="good" value="Good">
+                        <label for="day">Good</label><br>
+                        <input type="radio" id="bad" name="bad" value="Bad">
+                        <label for="day">Bad</label><br>
+                        <label for="task">What do you want to add</label><br>
+                        <input type="checkbox" id="hl" name="addhl" value="addhl">
+                        <label for="hl"> I need to add a Highlight</label><br>
+                        <input type="checkbox" id="task" name="addtask" value="addtask">
+                        <label for="task"> I need to add a Task</label><br>
+                        <label for="hl">Enter Highlight:</label>
+                        <input type="text" name="hl" id="hl"><br>
+                        <label for="tk">Enter Task:</label>
+                        <input type="text" name="tk" id="tk"><br>
+                        <label for="desc">General Description:</label>
+                        <textarea id="desc" name="description" rows="3" cols="50">Type description of day here.
+                        </textarea><br>
+
+                        <label for="pokemon">Choose pokemon of the day from the list:</label>
+                        <input list="pokemons" name="pokemon" id="pokemon">
+                        <datalist id="pokemons">
+                            <option value="Pikachu">
+                            <option value="Charizard">
+                            <option value="Blastoise">
+                            <option value="Celebi">
+                            <option value="Torterra">
+                            <option value="Infernape">
+                            <option value="Lucario">
+                        </datalist>
+                        <br>
+                        <label for="animal">Choose animal of the day from list:</label>
+                        <select name="animal" id="animal">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="tiger">Tiger</option>
+                            <option value="monkey">Monkey</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="submit">
+                    </fieldset>
+                </div>
+            </form>
+            <button type="button">I am Button</button>
+            <hr>
+        </main>
+        <footer>
+            <h3>Author: Prashanth Rajan</h3>
+            <nav>
+                <a href="https://www.linkedin.com/in/rajanprashanth/" target="_blank">LinkedIn</a> |
+                <a href="https://www.youtube.com/" target="_blank">YouTube(Channel Coming soon)</a> |
+                <a href="https://www.ucsd.edu/" target="_blank">University</a>
+            </nav>
+        </footer>
+    </body>
+</html>
