@@ -1,6 +1,6 @@
 ---
 name: Custom Learn Template
-about: Describe this issue template's purpose here.
+about: Specify what features to learn about
 title: "[Learn to Use Feature]"
 labels: ''
 assignees: ''
