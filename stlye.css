@@ -1,0 +1,143 @@
+  p {
+    color: #000; /*most paras can stay black*/
+    margin: 10px 10px 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h2 {
+    color: rgb(10, 39, 90);
+    text-align: center;
+    
+  }
+
+  b {
+    display: inline-block;
+  }
+
+  h1 {
+    color: hsl(157, 49%, 43%);
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h3 {
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+  }
+
+  section {
+      background-color: bisque;
+      width:75vw;
+      margin: auto;
+      border-color: chocolate;
+      border-width: thick;
+      border-style: double;
+      border-radius: 10px;
+  }
+  /*implement a grid with the pokemon content*/
+  .pika {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  }
+  .deet {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #poke {
+      display: grid;
+      grid-template-columns: 25% auto;
+      grid-template-rows: 20% auto;
+      column-gap: 10px;
+      row-gap: 5px;
+  }
+  /*turn the dog stuff into a flex board*/
+  #dog{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+  button {
+      width: 100px;
+      height: 3vmax;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 1in;
+      margin-right: 3in;
+      position: relative;
+  }
+
+  button:hover {
+    color: rgb(189, 35, 15);
+  }
+
+  button:active {
+    background-color: goldenrod;
+  }
+
+  img {
+    padding: 0 25vw 0 10vw;
+    max-width: 1000px;
+    min-width: 100px;
+  }
+
+  video {
+    padding-top: 1pc;
+    padding-bottom: 100px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  div.form {
+    position: sticky;
+    left: 30px;
+    width: 59vmin;
+    border-color: chocolate;
+    border-width: thick;
+    border-style: double;
+    border-radius: 10px;
+    margin-left: 30vw;
+  }
+
+  a[target=_blank] {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  * div {
+      color:rgb(47, 105, 0);
+  }
+  /* when the screen gets small enough, make the main color a light blue*/
+  @media only screen and (max-width: 800px) {
+      section {
+      background-color:rgb(129, 244, 252);
+      }
+  }
+
+  h1, h2 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  section h3 {
+      color:rgb(83, 1, 19);
+  }
+
+  ol > li {
+      color:midnightblue;
+  }
+
+  h3 ~ ul {
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  form + button {
+      background-color:olivedrab;
+  }
+
+  p.gen {
+      font-size: larger;
+  }
