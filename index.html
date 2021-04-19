@@ -4,6 +4,14 @@
         <title>Prashanth's Journal</title>
         <meta name="author" content="John Doe">
         <link rel="shortcut icon" type="image/jpg" href="./media/pikachu.jpg"/>
+        <link rel="stylesheet" href="stlye.css"/>
+        <style>
+            strong {
+                color: red; /*make important items red for emphasis*/
+                margin-left: 10px;
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -13,14 +21,13 @@
         </header>
         <main>
             <section>
-                <p>Here is a little bit about what I did these past few days.</p>
-                <strong>Note: These are not the only things I did</strong>
+                <p>Here is a little bit about what I did these past few days.<strong>Note: These are not the only things I did</strong></p>
             </section>
             <hr>
             <section>
                 <h1>April 8th, 2021</h1>
                 <h2>Thursday</h2>
-                <p>I learned how to use the br tag<br>to create line breaks</p>
+                <p class="gen">I learned how to use the br tag<br>to create line breaks</p>
                 <h3>Highlights</h3>
                 <div>
                     <ul>
@@ -38,7 +45,7 @@
             <section>
                 <h1>April 9th, 2021</h1>
                 <h2>Friday</h2>
-                <p>I didn't have a lot of classes so I was able to get a <em>so much</em> work done</p>
+                <p class="gen">I didn't have a lot of classes so I was able to get a <em>so much</em> work done</p>
                 <h3>Highlights</h3>
                 <ul>
                     <li>caught up on <i>econ lectures</i></li>
@@ -61,27 +68,26 @@
                     <li>Met with 110 group</li>
                     <li>Played some Pokemon Go</li>
                 </ul>
-                <div>
-                    <span>
-                        <img src="./media/pikachu.jpg" height="500" width="500" alt="Pikachu">
+                <div id="poke">
+                    <span class="pika">
+                        <img src="./media/pikachu.jpg" alt="Pikachu" style="height: 4in; width: 500px;">
                     </span>
+                    <details class="deet">
+                        <summary><b>Pokemon Go</b></summary>
+                        <p>Pokemon Go is a mobile game developed by <b>Niantic</b> that let's players catch Pokemon in the <i>real world</i>.<br>It's pretty awesome!</p>
+                    </details>
                 </div>
-                <details>
-                    <summary><b>Pokemon Go</b></summary>
-                    <p>Pokemon Go is a mobile game developed by <b>Niantic</b> that let's players catch Pokemon in the <i>real world</i>.<br>It's pretty awesome!</p>
-                </details>
                 <h3>Things to do</h3>
                 <ol>
                     <li>Lab2 part2</li>
                     <li>Meet with group again</li>
                     <li>Get a dog</li>
                 </ol>
-                <div>
-                    <video height="320" width="180" controls>
+                <div id="dog">
+                    <p><b>Dogs are awesome!</b></p>
+                    <video class="dogvid" height="320" width="180" controls>
                         <source src="./media/dogvid.MOV" type="video/mp4">
                     </video>
-                </div>
-                <div>
                     <audio controls>
                         <source src="./media/dogsound.mp3" type="audio/mpeg">
                     </audio>
@@ -90,7 +96,7 @@
             <hr>
             <h2>Add Entry</h2>
             <form>
-                <div>
+                <div class="form">
                     <fieldset>
                         <label for="date">What date is the entry for?</label>
                         <input type="date" id="date" name="entrydate" value="2021-04-10" min="2020-04-10" max="2022-04-10">
@@ -144,7 +150,7 @@
             <h3>Author: Prashanth Rajan</h3>
             <nav>
                 <a href="https://www.linkedin.com/in/rajanprashanth/" target="_blank">LinkedIn</a> |
-                <a href="https://www.youtube.com/" target="_blank">YouTube(Channel Coming soon)</a> |
+                <a href="https://www.youtube.com/">YouTube(Channel Coming soon)</a> |
                 <a href="https://www.ucsd.edu/" target="_blank">University</a>
             </nav>
         </footer>
